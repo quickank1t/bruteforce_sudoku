@@ -1,0 +1,47 @@
+<html>
+    <head>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/bootstrap-theme.min.css" rel="stylesheet"> 
+		<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+		<script src="bot.js"></script>
+		
+    </head>
+	<body onload="loadimage();getinput();" >
+		<h3><centeR><kbd style="background-color: black;">Bruteforce Sudoku!!</KBD></center></h3> 
+		
+		
+		<p id="image"> </p>			
+		
+				
+		<table border ="0" >
+			<tr>
+				<td style="padding-left: 50px;">
+					<canvas id="sudoku" width="900" height="550"></canvas>
+					
+				</td>
+				<td>
+					<p id="input" ></p></td>
+			</tr>
+			
+			<tr><td style="padding-left: 150px;">
+							<input id="randombtn" class="btn btn-default" type="button" onclick="loadSudoku()" value="Load Exisitng Sudoku" > 
+							<input id="bruteforce" class="btn btn-default" type="button" onclick="startbruteforce()" value="Bruteforce">
+							</td>
+			</tr>
+			
+		</table>
+		
+	</body>
+</html>
+		
+		<script >
+			document.getElementById("image").innerHTML = ''  ;
+			for(var i=0;i<10;i++){
+				document.getElementById("image").innerHTML += "<img id='"+i+"' src='img/"+i  +".png'  height='50' width='50'  hidden>";
+				if(i!=0){
+					document.getElementById("image").innerHTML += "<img id='d"+i+"' src='img/d"+i  +".png'  height='50' width='50' onclick='editBox(this)' hidden>";
+					document.getElementById("image").innerHTML += "<img id='r"+i+"' src='img/r"+i  +".png'  height='50' width='50' onclick='editBox(this)' hidden>";
+				}
+				
+			}
+		</script>
