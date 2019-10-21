@@ -504,50 +504,6 @@ function disableinput(){
 		document.getElementById("input_" + i).disabled =true;
 }
 
-
-//var config = {
-//    apiKey: "AIzaSyBpATOpMHR40sASrc2IM66Uv9ThztZU1LQ",
-//    authDomain: "ankitproject-44df1.firebaseapp.com",
-//    databaseURL: "https://ankitproject-44df1.firebaseio.com",
-//    projectId: "ankitproject-44df1",
-//    storageBucket: "",
-//    messagingSenderId: "512382470895"
-//  };
-//  firebase.initializeApp(config);
-//
-//	function upload(sudoku){
-//		var database = firebase.database();
-//		firebase.database().ref('/sudoku').push({
-//			sudoku : sudoku
-//	 });
-//}
-//
-//var fbdata;
-//function read(){
-//
-//	var ref = firebase.database().ref('/sudoku');
-//
-//	ref.on("value", function(snapshot) {
-//	   console.log(snapshot.val());
-//		fbdata = snapshot.val();
-//	}, function (error) {
-//	   console.log("Error: " + error.code);
-//	});
-//
-//	read_data();
-//}
-//
-//function read_data(){
-//	for (var property in fbdata) {
-//		if (fbdata.hasOwnProperty(property)) {
-//			// do stuff
-//			alert(property);
-//		}
-//	}
-//}
-
-
-
 function myFunction(message , time) {
     var x = document.getElementById("snackbar");
 	document.getElementById("toast").innerHTML = message;
