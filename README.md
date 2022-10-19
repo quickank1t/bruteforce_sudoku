@@ -12,4 +12,4 @@ Right from the images used to the functional code, its all done by me.
 
 # github
 
-https://quickank1t.github.io/bruteforce_sudoku/
+https://quickank1t.github.io/bruteforce_sudoku/sudoku/
